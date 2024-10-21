@@ -20,6 +20,7 @@ import {
 const AUDIENCES = {
   mobile: () => window.innerWidth < 600,
   desktop: () => window.innerWidth >= 600,
+  tiktok: () => window.innerWidth < 600 && new URLSearchParams(window.location.search).get('utm_source') === 'tiktok'
   // define your custom audiences here as needed
 };
 
