@@ -6,10 +6,9 @@ Codebase for the fictional WKND site, showcasing the capabilities of Adobe's Edg
 - Slack Bot integration for monitoring Lighthouse score and conversions 
 - Document based content authoring
 
-<<<<<<< HEAD
 ## Environments
-- Preview: https://main--wknd--hlxsites.hlx.page/
-- Live: https://main--wknd--hlxsites.hlx.live/
+- Preview: https://main--wknd--ekremney.hlx.page/
+- Live: https://main--wknd--ekremney.hlx.live/
 =======
 ## Features
 
@@ -21,7 +20,6 @@ The AEM Experimentation plugin supports:
 - :rocket: easy simulation of each experience and basic reporting leveraging in-page overlays.
 
 \* Bringing additional marketing technology such as visitor-based analytics or personalization to a project will cancel this privacy-first principle.
->>>>>>> 27c38b8 (Squashed 'plugins/experimentation/' changes from e04a21c..7efc8ed)
 
 ## Installation
 
@@ -37,7 +35,6 @@ npm tst
 
 ## Capabilities
 
-<<<<<<< HEAD
 Before you begin, ensure you have the [AEM Sidekick Chrome extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo) installed.
 
 ### Experimentation
@@ -78,7 +75,6 @@ WKND_URL=https://main--wknd--<YOUR-GITHUB-USERNAME-OR-ORG>.hlx.live npm run gene
 WKND_URL=https://main--wknd--hlxsites.hlx.live ITERATIONS=1000 npm run generate-traffic
 =======
 If the `subtree pull` command is failing with an error like:
->>>>>>> 27c38b8 (Squashed 'plugins/experimentation/' changes from e04a21c..7efc8ed)
 ```
 fatal: can't squash-merge: 'plugins/experimentation' was never added
 ```
@@ -96,7 +92,6 @@ you can just delete the folder and re-add the plugin via the `git subtree add` c
 ### Document based content authoring
 [Authoring docs](https://www.hlx.live/docs/authoring)
 
-<<<<<<< HEAD
 - Follow the "Conversion Tracking" steps above, ensuring that fstab.yaml in your fork points to a SharePoint or Google Drive folder that you own
 - Refer to the [Authoring docs](https://www.hlx.live/docs/authoring) for details on authoring functionality
 - Modify and "Preview" the documents in your SharePoint or Google Drive folder to see the changes reflected on the Preview environment
@@ -255,4 +250,3 @@ For detailed implementation instructions on the different features, please read 
 - [Audiences](/documentation/audiences.md)
 - [Campaigns](/documentation/campaigns.md)
 - [Experiments](/documentation/experiments.md)
->>>>>>> 27c38b8 (Squashed 'plugins/experimentation/' changes from e04a21c..7efc8ed)
