@@ -1,4 +1,4 @@
-import { decorateIcons } from '../../scripts/lib-franklin.js';
+import { decorateIcons } from '../../scripts/aem.js';
 
 /**
  * collapses all open nav sections
