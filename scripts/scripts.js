@@ -21,6 +21,7 @@ const AUDIENCES = {
   mobile: () => window.innerWidth < 600,
   desktop: () => window.innerWidth >= 600,
   // define your custom audiences here as needed
+  tiktok: () => window.innerWidth < 600 && URLSearchParams(window.location.search).get('utm_source') === 'tiktok',
 };
 
 /**
