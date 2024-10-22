@@ -92,3 +92,39 @@ main .carousel-buttons button {
 main .carousel-buttons button.selected {
   background-color: var(--link-color);
 }
+
+
+body.experiment-hero-test.variant-challenger-1 .carousel {
+  display: flex;
+  flex-direction: column;
+}
+
+body.experiment-hero-test.variant-challenger-1 .carousel-buttons {
+  display: none;
+}
+
+body.experiment-hero-test.variant-challenger-1 .carousel-text {
+  background-color: black;
+  color: white;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body.experiment-hero-test.variant-challenger-1 .carousel-text p,
+body.experiment-hero-test.variant-challenger-1 .carousel-text h2 {
+  text-align: center;
+}
+
+body.experiment-hero-test.variant-challenger-1 .carousel-text > h2 > a {
+  background-color: black;
+  color: white;
+}
+
+body.experiment-hero-test.variant-challenger-1 .carousel-text > p.button-container > a {
+  background-color: #FE2C55;
+  color: white;
+  min-width: 320px;
+  border-radius: 50px;
+}
