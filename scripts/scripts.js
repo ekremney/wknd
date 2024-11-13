@@ -222,6 +222,16 @@ export function addFavIcon(href) {
   }
 }
 
+export function createInlineScript(document, element, innerHTML, type) {
+  const script = document.createElement('script');
+  if (type) {
+    script.type = type;
+  }
+  script.innerHTML = innerHTML;
+  element.appendChild(script);
+  return script;
+}
+
 /**
  * loads everything that doesn't need to be delayed.
  */
@@ -253,6 +263,13 @@ async function loadLazy(doc) {
   sampleRUM('lazy');
   sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
   sampleRUM.observe(main.querySelectorAll('picture > img'));
+
+  const GTM_LOAD_SCRIPT = `(function(w,d,s,l,i){var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5GSMQK3');`;
+
+  createInlineScript(document, document.body, GTM_LOAD_SCRIPT, 'text/javascript');
 
   // Add below snippet at the end of the lazy phase
   if ((getMetadata('experiment')
