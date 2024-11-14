@@ -267,7 +267,7 @@ async function loadLazy(doc) {
   const GTM_LOAD_SCRIPT = `(function(w,d,s,l,i){var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5GSMQK3');`;
+  })(window,document,'script','dataLayer','GTM-MP28XD9M');`;
 
   createInlineScript(document, document.body, GTM_LOAD_SCRIPT, 'text/javascript');
 
