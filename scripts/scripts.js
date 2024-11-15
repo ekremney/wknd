@@ -265,7 +265,7 @@ async function loadLazy(doc) {
 
   document.body.prepend(document.createRange().createContextualFragment(`
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MP28XD9M"
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCNSRMNV"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   `));
