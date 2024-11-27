@@ -187,7 +187,7 @@ export function decorateMain(main) {
 async function loadEager(doc) {
 
   // block on main thread
-  Array(10000).fill().forEach(() => JSON.parse('[' + '0,'.repeat(1_000_000) + '0]'));
+  Array(100).fill().forEach(() => JSON.parse('[' + '0,'.repeat(1_000_000) + '0]'));
 
   if (getMetadata('experiment')
     || Object.keys(getAllMetadata('campaign')).length
